@@ -19,15 +19,20 @@
     </script>
   </head>
   <body>
-    <h1>Выбери песню:</h1>
-    <ul>
-      <li><a href="#">Я свободен!</a></li>
-      <li><a href="#">1100</a></li>
-      <li><a href="#">Улица роз</a></li>
-      <li><a href="#">Ангельская пыль</a></li>
-      <li><a href="#">Осколок льда</a></li>
-    </ul>
-    <h2>Лист для проигрования. Двойной кли удаляет трек</h2>
-    <ul></ul>
+    <h1>Выбери трек:</h1>
+    <ol id="main">
+      <li onclick="okno()">Я свободен!</li>
+      <li>1100</li>
+      <li>Улица роз</li>
+      <li>Ангельская пыль</li>
+      <li>Осколок льда</li>
+    </ol>
+    <h2>Лист для проигрования. Двойной клик удаляет трек</h2>
+    <ol id="listT"></ol>
+    <script>
+      const liLast = document.createElement("li");
+      liLast.innerHTML = "append";
+      listT.append(liLast);
+    </script>
   </body>
 </html>

@@ -19,7 +19,7 @@ h1,h2,h3 {
   text-align: center;
   margin:0% 15% 0% 15%;
 }
-ul li a {
+ol li {
   color: rgba(255, 255, 255, 0.855);
   font-size: 1.5rem;
   margin-left: 20%;
