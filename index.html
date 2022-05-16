@@ -7,11 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Song</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js">
+    <script type="module" src="script.js">
       /*Сверстайте HTML  и напишите скрипт,  выводящий по готовому массиву с
           названиями маркированный список песен. Внизу должен находится блок – плейлист.
           При клике на песню в списке она должна добавляться в плейлист.
@@ -20,19 +19,18 @@
   </head>
   <body>
     <h1>Выбери трек:</h1>
-    <ol id="main">
-      <li onclick="okno()">Я свободен!</li>
-      <li>1100</li>
-      <li>Улица роз</li>
-      <li>Ангельская пыль</li>
-      <li>Осколок льда</li>
-    </ol>
+    <div id="first">
+      <ol id="main">
+        <li id="f" onclick="okno()">Я свободен!</li>
+        <li>1100</li>
+        <li>Улица роз</li>
+        <li id="g">Ангельская пыль</li>
+        <li>Осколок льда</li>
+      </ol>
+    </div>
     <h2>Лист для проигрования. Двойной клик удаляет трек</h2>
-    <ol id="listT"></ol>
-    <script>
-      const liLast = document.createElement("li");
-      liLast.innerHTML = "append";
-      listT.append(liLast);
-    </script>
+    <div id="second">
+      <ol id="listT"></ol>
+    </div>
   </body>
 </html>

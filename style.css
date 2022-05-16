@@ -23,4 +23,5 @@ ol li {
   color: rgba(255, 255, 255, 0.855);
   font-size: 1.5rem;
   margin-left: 20%;
+  list-style-type: none;
 }
