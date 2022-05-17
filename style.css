@@ -22,8 +22,9 @@ h1,h2,h3 {
 ul{
   list-style-type: none;
   margin-left: 20%;
+  color: white;
 }
- li a {
+ li,a {
   color: rgba(255, 255, 255, 0.855);
   font-size: 1.5rem;
    
