@@ -2,10 +2,12 @@
 const parent1 = document.getElementById("list2");
 const elem1 = document.getElementById("sound1");
 const elem2 = document.getElementById("sound2");
-const delelem1 = document.getElementById("soundNew1");
+const elem3 = document.getElementById("sound3");
+const elem4 = document.getElementById("sound4");
+const elem5 = document.getElementById("sound5");
 
-/*Клонирование*/
-const createCopy = (a,b,c) => {
+/*Клонирование и Удаление*/
+const createCloneDelCopy = (a,b,c) => {
 let clone = a.cloneNode(true);
 let list = (b);
 let copy = list.append(clone);
@@ -20,12 +22,13 @@ clone.ondblclick = () => {
 /*Активация*/
 const getOnclik = (a,b,c) => {
 a.onclick = () =>{
-createCopy(a,b,c)};
+createCloneDelCopy(a,b,c)};
 }
-/*Удаление*/
 
 /*Значения*/
 getOnclik(elem1,parent1,"soundNew1");
 getOnclik(elem2, parent1,"soundNew2");
+getOnclik(elem3, parent1,"soundNew3");
+getOnclik(elem4, parent1,"soundNew4");
+getOnclik(elem5, parent1,"soundNew5");
 
-/*ondblclick - реакция на два клика*/
