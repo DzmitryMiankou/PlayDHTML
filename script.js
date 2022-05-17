@@ -26,7 +26,7 @@ createCloneDelCopy(a,b,c)};
 }
 
 /*Значения*/
-getOnclik(elem1,parent1,"soundNew1");
+getOnclik(elem1, parent1,"soundNew1");
 getOnclik(elem2, parent1,"soundNew2");
 getOnclik(elem3, parent1,"soundNew3");
 getOnclik(elem4, parent1,"soundNew4");
