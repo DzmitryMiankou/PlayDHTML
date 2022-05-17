@@ -27,6 +27,7 @@ ul{
 #list2 {
 margin: 0% 20% 0% 20%;
 display: flex;
+flex-wrap: wrap;
 gap:2%;
 }
 #list1 li a {

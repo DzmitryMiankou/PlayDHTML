@@ -31,4 +31,3 @@ getOnclik(elem2, parent1,"soundNew2");
 getOnclik(elem3, parent1,"soundNew3");
 getOnclik(elem4, parent1,"soundNew4");
 getOnclik(elem5, parent1,"soundNew5");
-
