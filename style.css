@@ -1,7 +1,6 @@
 :root {
   box-sizing: border-box;
   --main-color: rgb(0, 0, 0); /* Переменная черного цвета */
-  --main-color-light: #dcd4d1; /* Переменная бежевого цвета */
   --logo-color-white: white; /* Переменная белого цвета */
 }
 *,
@@ -10,26 +9,31 @@
   box-sizing: inherit;
 }
 body {
-  background-color:rgb(0, 0, 0);
+  background-color:var(--main-color)
 }
 h1,h2,h3 {
   font-size: 2rem;
   padding: 1%;
-  background-color:rgb(255, 255, 255);
+  background-color:var(--logo-color-white);
   text-align: center;
   margin:0% 15% 0% 15%;
 }
 ul{
   list-style-type: none;
-  margin-left: 20%;
-  color: white;
+  }
+#list1 {
+  margin: 0% 70% 0% 20%;
 }
- li,a {
-  color: rgba(255, 255, 255, 0.855);
-  font-size: 1.5rem;
-   
+#list2 {
+margin: 0% 0% 0% 20%;
+display: flex;
+gap:2%;
 }
-li {
-  color:white;
-  font-size: 1.5rem;
+#list1 li a {
+color:var(--logo-color-white);
+font-size: 1.5rem;
+}
+#list2 li a {
+  font-size: 1rem;
+  color:var(--logo-color-white)
 }
